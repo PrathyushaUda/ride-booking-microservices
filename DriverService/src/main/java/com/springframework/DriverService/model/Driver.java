@@ -10,23 +10,24 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 @Entity
-@Table(name="drivers")
+@Table(name = "drivers")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Driver {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	 private Long driverId;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long driverId;
 
-	    private String driverName;
+	private String driverName;
 
-	    private String mobileNumber;
+	private String mobileNumber;
 
-	    private String vehicleNumber;
+	private String vehicleNumber;
+	private String vehicleType;
+	
 
-	    private String vehicleType;
-
-	    private Boolean availabilityStatus;
+	private Boolean availabilityStatus;
 }
