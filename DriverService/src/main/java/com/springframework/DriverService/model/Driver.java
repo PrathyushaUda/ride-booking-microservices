@@ -19,15 +19,14 @@ import lombok.NoArgsConstructor;
 public class Driver {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long driverId;
 
+	private Long driverId;
 	private String driverName;
 
 	private String mobileNumber;
 
 	private String vehicleNumber;
 	private String vehicleType;
-	
 
 	private Boolean availabilityStatus;
 }
